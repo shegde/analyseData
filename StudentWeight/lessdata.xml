@@ -1,0 +1,22 @@
+<response>
+<row _id="1" _uuid="0C56C33F-7A67-4A2A-A13A-9E7F6ED8E4F3" _position="1" _address="http://health.data.ny.gov/resource/es3k-2aus/1">
+<location_code>010100</location_code>
+<county>ALBANY</county>
+<area_name>ALBANY CITY SCHOOL DISTRICT</area_name>
+<region>NORTHEASTERN NEW YORK</region>
+<school_years>2010-2012</school_years>
+<overweight_1>184</overweight_1>
+<overweight_2>13.9</overweight_2>
+<obese_1>354</obese_1>
+<obese_2>26.8</obese_2>
+<overweight_or_obese_1>538</overweight_or_obese_1>
+<overweight_or_obese_2>40.7</overweight_or_obese_2>
+<grade_category>DISTRICT TOTAL</grade_category>
+<area_type>SCHOOL DISTRICT</area_type>
+<street_address>ACADEMY PARK</street_address>
+<city>ALBANY</city>
+<state>NY</state>
+<zip_code>12207</zip_code>
+<location_1 latitude="42.6535" longitude="-73.7547" needs_recoding="false"/>
+</row>
+</response>
