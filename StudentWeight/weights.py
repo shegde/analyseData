@@ -2,7 +2,7 @@
 
 Statistics on student body weights in NY schools.
 Gives total students per category - elementary/middle/
-Plots on map based on color
+Gives top 5 cities
 
 """
 
@@ -41,16 +41,20 @@ for row in response.iter('row'):
 	    else:
 	        cityWise[city] = cityWise[city] + over
 	
-	#print "%40s %40s %20s %2s %5d %5d" % (area_name, category, city, state, int(zip), over)
-	
-
 
 orderdCityWise = collections.OrderedDict(sorted(cityWise.items()))
 for s in orderdCityWise:
-    print "State: %s, Total: %s" % (s, orderdCityWise[s])
+    print "City: %s, Total: %s" % (s, orderdCityWise[s])
     
-    
+
 print "Total students overweight or obese: %d" % sum(overList)
+
+# top 5 cities with
+top = []
+for k in cityWise.keys():
+    top.append((cityWise[k], k))
+    
+print sorted(top, reverse=True)[:5]
 		
 
 
