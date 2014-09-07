@@ -1,8 +1,9 @@
 """
 	Find top 5 streets with most potholes in Chicago
+	
+	Source: https://data.cityofchicago.org/Service-Requests/311-Service-Requests-Pot-Holes-Reported/7as2-ds3y
+
 """
-
-
 import csv
 import pprint
 import operator
@@ -24,8 +25,8 @@ for row in rows:
 
 
 # get max value item in one line
-k_max = max(openCases.iteritems(), key=operator.itemgetter(1))[0]
-print "Max potholes on %s, Number: %s" % (k_max, openCases[k_max])
+# k_max = max(openCases.iteritems(), key=operator.itemgetter(1))[0]
+# print "Max potholes on %s, Number: %s" % (k_max, openCases[k_max])
 
 # Top 5 number of potholes
 top = []
@@ -33,7 +34,6 @@ for k in openCases.keys():
     top.append((openCases[k], k))
 
 print sorted(top, reverse=True)[:5]
-
 
 
 
